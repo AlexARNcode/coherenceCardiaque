@@ -11,39 +11,66 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation-name: bgColors;
-          animation-name: bgColors;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-@-webkit-keyframes bgColors {
+.ball {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+  border-radius: 100%;
+}
+
+.ball-animation {
+  -webkit-animation-name: breathing;
+          animation-name: breathing;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#startBtn {
+  margin-top: 40px;
+  width: 200px;
+}
+
+@-webkit-keyframes breathing {
   0% {
-    background-color: red;
+    height: 200px;
+    width: 200px;
+    background-color: teal;
   }
   50% {
-    background-color: yellow;
+    height: 400px;
+    width: 400px;
+    background-color: #69e985;
   }
   100% {
-    background-color: red;
+    height: 200px;
+    width: 200px;
+    background-color: teal;
   }
 }
 
-@keyframes bgColors {
+@keyframes breathing {
   0% {
-    background-color: red;
+    height: 200px;
+    width: 200px;
+    background-color: teal;
   }
   50% {
-    background-color: yellow;
+    height: 400px;
+    width: 400px;
+    background-color: #69e985;
   }
   100% {
-    background-color: red;
+    height: 200px;
+    width: 200px;
+    background-color: teal;
   }
 }
 /*# sourceMappingURL=style.css.map */

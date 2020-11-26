@@ -5,18 +5,46 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    animation-name: bgColors;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
    }
    
    h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
    }
 
-   @keyframes bgColors {
-    0% {background-color: red;}
-    50% {background-color: yellow;}
-    100% {background-color: red;}
+.ball {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+  border-radius: 100%;
+}
+
+.ball-animation {
+  animation-name: breathing;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#startBtn {
+  margin-top: 40px;
+  width: 200px;
+}
+
+@keyframes breathing {
+  0% {
+    height: 200px;
+    width: 200px;
+    background-color: teal;
   }
+
+  50% {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(105, 233, 133);
+  }
+
+  100% {
+    height: 200px;
+    width: 200px;
+    background-color: teal;
+  }
+}
