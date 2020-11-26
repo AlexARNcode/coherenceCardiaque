@@ -16,11 +16,16 @@ function start() {
 
     // 2/ Play an audio file for 5 sec, then another audio file for 5 sec, etc etc... until 5 minutes total.
     playBgMusic();
-    window.setInterval(playSound, 5000);
+    var bells = setInterval(playSound, 5000);
 
     // Stop everything after 5 minutes
-    setTimeout(enablePlay, 15000);
+    function stopBells() {
+        clearInterval(bells);
+    }
+
+    setTimeout(stopBells, 15000);
     setTimeout(stopBgMusic, 15000);
+    setTimeout(enablePlay, 15000);
 }
 
 export { start };
