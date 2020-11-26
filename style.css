@@ -2,6 +2,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   background-color: #eee;
+  color: #1b1b1b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,8 +19,17 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
-  margin-top: 40px;
-  margin-bottom: 0px;
+}
+
+header {
+  background-color: darkGrey;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .ball {
@@ -61,7 +71,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #startBtn:hover {
-  background-color: black;
+  background-color: #1b1b1b;
+}
+
+#instructions {
+  text-align: center;
 }
 
 @-webkit-keyframes breathing {
