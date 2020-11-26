@@ -5,8 +5,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    animation-name: bgColors;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
    }
    
    h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
    }
+
+   @keyframes bgColors {
+    0% {background-color: red;}
+    50% {background-color: yellow;}
+    100% {background-color: red;}
+  }
