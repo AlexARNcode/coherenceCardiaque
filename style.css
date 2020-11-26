@@ -27,8 +27,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
   width: 200px;
   height: 200px;
-  background-color: teal;
   border-radius: 100%;
+  border: 1px solid #5f5f5f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
           animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  border: none;
 }
 
 #startBtn {

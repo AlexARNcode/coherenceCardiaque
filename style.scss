@@ -23,9 +23,8 @@ body {
   margin-bottom: 40px;
   width: 200px;
   height: 200px;
-  background-color: teal;
-  border-radius: 100%;
-
+  border-radius: 100%;  
+  border: 1px solid rgb(95, 95, 95);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +34,7 @@ body {
   animation-name: breathing;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+  border: none;
 }
 
 #startBtn {
