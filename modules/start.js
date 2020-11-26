@@ -8,6 +8,7 @@ Main actions to do here
 2bis) Play a background music for 5 minutes.
 3) Show a progress bar during the 5 minutes.
 4) Show an animation: 5 seconds in, 5 seconds out.
+4 bis) show "Inhale", "Exhale" every 5 seconds.
 5) After 5 minutes : Stop the progressbar, stop animation, stop every sounds, enable the play button.
 */
 
