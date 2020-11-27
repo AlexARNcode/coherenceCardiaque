@@ -7,17 +7,19 @@ body {
 
     background-color: #eee;
     color: $almostBlack;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  
     padding: 0;
     margin: 0;
    }
    
   h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
@@ -48,7 +50,7 @@ header {
 
 #startBtn {
   padding: 5px;
-  width: 200px;
+  width: 300px;
 
   font-size: 15px;
   color: white;
@@ -67,12 +69,12 @@ header {
 }
 
 #progressBar {
-  background-color: black;
+  background-color: $darkGrey;
   width: 300px;
 }
 
 #inProgressBar {
-  background-color: green;
+  background-color: teal;
   width: 1px;
   height: 30px;
 }
