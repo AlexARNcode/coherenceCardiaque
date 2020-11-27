@@ -4,11 +4,11 @@ import { animateBall, removeBallAnimation, inhaleExhaleAnimation } from "./anima
 
 /*
 Main actions to do here
-1) Hide and disable play button on it's clicked.
-2) Play an audio file for 5 sec, then another audio file for 5 sec, etc etc..
+1) Hide and disable play button when clicked.
+2) Play a sound each 5 seconds.
 2bis) Play a background music for 5 minutes.
 3) Show a progress bar during the 5 minutes.
-4) Show an animation: 5 seconds in, 5 seconds out.
+4) Show an animation: A ball expanding for 5 seconds, and coming back for 5 seconds.
 4 bis) show "Inhale", "Exhale" every 5 seconds.
 5) After 5 minutes : Stop the progressbar, stop animation, stop every sounds, enable the play button.
 */
@@ -27,15 +27,15 @@ function start() {
         removeBallAnimation();
     }
 
-    /* 1) Disable play button */
+    /* 1) Hide and disable play button when clicked. */
     disableStartBtn();
 
-    /* 2) and 2bis) : Play an audio file each 5 seconds and play background Music */
+    /* 2) Play a sound each 5 seconds. and 2)bis Play a background music for 5 minutes. */
     playSound();
     playBgMusic();
     const bells = setInterval(playSound, 5000);
 
-    /* 4) Animation and 4bis) */
+    /* 4) Show an animation: A ball expanding for 5 seconds, and coming back for 5 seconds. */
     animateBall();
 
     /* 4 bis) show "Inhale", "Exhale" every 5 seconds. */
