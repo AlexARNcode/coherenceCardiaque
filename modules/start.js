@@ -1,5 +1,6 @@
 import { disableStartBtn, enableStartBtn } from "./startBtn.js";
 import { playBgMusic, stopBgMusic, playSound } from "./sound.js";
+import { animateBall } from "./animation.js";
 
 /*
 Main actions to do here
@@ -53,8 +54,7 @@ function start() {
     const bells = setInterval(playSound, 5000);
 
     /* 4) Animation and 4bis) */
-    const ball = document.getElementById('ball');
-    ball.classList.add('ball-animation');
+    animateBall();
 
     /* 4 bis) show "Inhale", "Exhale" every 5 seconds. */
     document.getElementById("instructions").style.display = "block";
