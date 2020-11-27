@@ -78,6 +78,17 @@ header {
   text-align: center;
 }
 
+#progressBar {
+  background-color: black;
+  width: 300px;
+}
+
+#inProgressBar {
+  background-color: green;
+  width: 1px;
+  height: 30px;
+}
+
 @-webkit-keyframes breathing {
   0% {
     height: 200px;
