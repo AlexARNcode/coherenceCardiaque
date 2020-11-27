@@ -14,7 +14,7 @@ Main actions to do here
 */
 
 function start() {
-    const totalTime = 9000; // modify this value for testing purposes (ms).
+    const totalTime = 300000; // modify this value for testing purposes (ms). 300000ms = 5 minutes.
 
     function stopBells() {
         clearInterval(bells);
@@ -34,6 +34,27 @@ function start() {
     playSound();
     playBgMusic();
     const bells = setInterval(playSound, 5000);
+
+    /* 3) Show a progress bar during the 5 minutes. */
+    var i = 0;
+    function move() {
+    if (i == 0) {
+        i = 1;
+        var elem = document.getElementById("inProgressBar");
+        var width = 1;
+        var id = setInterval(frame, 1000); // 1000ms = 1sec
+        function frame() {
+            if (width >= 300) {
+            clearInterval(id);
+            i = 0;
+        } else {
+            width++;
+            elem.style.width = width + "px";
+      }
+    }
+  }
+}
+    move();
 
     /* 4) Show an animation: A ball expanding for 5 seconds, and coming back for 5 seconds. */
     animateBall();
