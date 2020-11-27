@@ -1,6 +1,6 @@
 import { disableStartBtn, enableStartBtn } from "./startBtn.js";
 import { playBgMusic, stopBgMusic, playSound } from "./sound.js";
-import { animateBall } from "./animation.js";
+import { animateBall, removeBallAnimation } from "./animation.js";
 
 /*
 Main actions to do here
@@ -21,16 +21,11 @@ function start() {
         clearInterval(bells);
     }
 
-    function removeAnimation() {
-        ball.classList.replace('ball-animation', 'ball');
-    }
-
     function stop() {
-        removeAnimation();
         stopBells();
         stopBgMusic();
         enableStartBtn();
-        document.getElementById("instructions").style.display = "none";
+        removeBallAnimation();
     }
 
     function instructions() {

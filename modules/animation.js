@@ -1,6 +1,11 @@
+const ball = document.getElementById('ball');
+
 function animateBall() {
-    const ball = document.getElementById('ball');
     ball.classList.add('ball-animation');
 }
 
-export { animateBall };
+function removeBallAnimation() {
+    ball.classList.replace('ball-animation', 'ball');
+}
+
+export { animateBall, removeBallAnimation };
