@@ -1,6 +1,6 @@
 import { disableStartBtn, enableStartBtn } from "./startBtn.js";
 import { playBgMusic, stopBgMusic, playSound } from "./sound.js";
-import { animateBall, removeBallAnimation } from "./animation.js";
+import { animateBall, removeBallAnimation, inhaleExhaleAnimation } from "./animation.js";
 
 /*
 Main actions to do here
@@ -15,7 +15,6 @@ Main actions to do here
 
 function start() {
     const totalTime = 9000; // modify this value for testing purposes (ms).
-    let inhale = true;
 
     function stopBells() {
         clearInterval(bells);
@@ -26,18 +25,6 @@ function start() {
         stopBgMusic();
         enableStartBtn();
         removeBallAnimation();
-    }
-
-    function instructions() {
-        if (inhale) {
-            document.getElementById("instructions").innerHTML = "Exhale";
-            inhale = false;
-        }
-        else 
-        {
-            document.getElementById("instructions").innerHTML = "Inhale";     
-            inhale = true;
-        }
     }
 
     /* 1) Disable play button */
@@ -52,9 +39,7 @@ function start() {
     animateBall();
 
     /* 4 bis) show "Inhale", "Exhale" every 5 seconds. */
-    document.getElementById("instructions").style.display = "block";
-    document.getElementById("instructions").innerHTML = "Inhale";
-    setInterval(instructions, 5000);
+    inhaleExhaleAnimation();
     
     /* 5) Stop everything after 5 minutes */
     setTimeout(stop, totalTime);
