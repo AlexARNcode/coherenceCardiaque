@@ -1,6 +1,7 @@
 import { disableStartBtn, enableStartBtn } from "./startBtn.js";
 import { playBgMusic, stopBgMusic, playSound } from "./sound.js";
 import { animateBall, removeBallAnimation, inhaleExhaleAnimation } from "./animation.js";
+import { progressBar } from "./progressBar.js";
 
 /*
 Main actions to do here
@@ -36,25 +37,7 @@ function start() {
     const bells = setInterval(playSound, 5000);
 
     /* 3) Show a progress bar during the 5 minutes. */
-    var i = 0;
-    function move() {
-    if (i == 0) {
-        i = 1;
-        var elem = document.getElementById("inProgressBar");
-        var width = 1;
-        var id = setInterval(frame, 1000); // 1000ms = 1sec
-        function frame() {
-            if (width >= 300) {
-            clearInterval(id);
-            i = 0;
-        } else {
-            width++;
-            elem.style.width = width + "px";
-      }
-    }
-  }
-}
-    move();
+    progressBar();
 
     /* 4) Show an animation: A ball expanding for 5 seconds, and coming back for 5 seconds. */
     animateBall();

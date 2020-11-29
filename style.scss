@@ -48,6 +48,15 @@ header {
   border: none;
 }
 
+#animation {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
 #startBtn {
   padding: 5px;
   width: 300px;
