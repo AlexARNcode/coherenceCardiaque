@@ -13,6 +13,7 @@ Just clone the repository locally to your computer with the git clone command.
 
 ## Usage
 
-You need a webserver to make it run. If you don't, the app will not work (Cross-Origin Request problems).
+With an up-to-date browser, it seems you need a local webserver to make it run. 
+If you don't, the app might not work (Cross-Origin Request problems).
 
 Just launch the index.html, click on the START button and the application will guide you through the session.
