@@ -5,7 +5,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
 
-    background-color: #eee;
+    background-color: rgb(176, 212, 204);
     color: $almostBlack;
   
     padding: 0;
@@ -23,7 +23,7 @@ main {
 }
 
 header {
-  background-color: darkGrey;
+  background-color:  rgb(128, 173, 164);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -45,6 +45,7 @@ header {
   animation-name: breathing;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
   border: none;
 }
 
@@ -61,18 +62,19 @@ header {
   padding: 5px;
   width: 300px;
 
+  margin-top: 7px;
+
   font-size: 15px;
   color: white;
   background-color: $darkGrey;
 
-  border-radius: 4px;
-  border: 1px solid;
+  border: none;
 
   &:hover {
     background-color: $almostBlack;
   }
 }
-
+bo
 #instructions {
   text-align: center;
 }
@@ -95,10 +97,18 @@ header {
     background-color: teal;
   }
 
+  25% {
+    background-color: #549D95;
+  }
+
   50% {
     height: 400px;
     width: 400px;
-    background-color: rgb(105, 233, 133);
+    background-color:#e7d245;
+  }
+
+  75% {
+    background-color: #549D95;
   }
 
   100% {

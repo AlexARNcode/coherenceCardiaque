@@ -1,7 +1,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
-  background-color: #eee;
+  background-color: #b0d4cc;
   color: #1b1b1b;
   padding: 0;
   margin: 0;
@@ -25,7 +25,7 @@ main {
 }
 
 header {
-  background-color: darkGrey;
+  background-color: #80ada4;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,6 +60,8 @@ header {
           animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   border: none;
 }
 
@@ -81,17 +83,18 @@ header {
 #startBtn {
   padding: 5px;
   width: 300px;
+  margin-top: 7px;
   font-size: 15px;
   color: white;
   background-color: #5f5f5f;
-  border-radius: 4px;
-  border: 1px solid;
+  border: none;
 }
 
 #startBtn:hover {
   background-color: #1b1b1b;
 }
 
+bo
 #instructions {
   text-align: center;
 }
@@ -113,10 +116,16 @@ header {
     width: 200px;
     background-color: teal;
   }
+  25% {
+    background-color: #549D95;
+  }
   50% {
     height: 400px;
     width: 400px;
-    background-color: #69e985;
+    background-color: #e7d245;
+  }
+  75% {
+    background-color: #549D95;
   }
   100% {
     height: 200px;
@@ -131,10 +140,16 @@ header {
     width: 200px;
     background-color: teal;
   }
+  25% {
+    background-color: #549D95;
+  }
   50% {
     height: 400px;
     width: 400px;
-    background-color: #69e985;
+    background-color: #e7d245;
+  }
+  75% {
+    background-color: #549D95;
   }
   100% {
     height: 200px;
