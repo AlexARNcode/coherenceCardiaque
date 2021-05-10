@@ -1,4 +1,4 @@
-var bgMusic = new Audio("/media/bgMusic.mp3");
+var bgMusic = new Audio("./media/bgMusic.mp3");
 
 function playBgMusic() {
     bgMusic.play();
@@ -9,7 +9,7 @@ function stopBgMusic() {
 }
 
 function playSound() {
-    const audio = new Audio("/media/bell1.wav");
+    const audio = new Audio("./media/bell1.wav");
     audio.play();
 }
 
