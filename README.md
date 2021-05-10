@@ -1,11 +1,13 @@
 # Coherence Cardiaque
 
 Coherence cardiaque is an app to guide you through "Cardiac coherence" breathing technique for reducing stress and feeling better overall.
-"Cardiac coherence" essentially consists of inhaling for 5 seconds, then exhaling for 5 seconds, etc etc..
+
+"Cardiac coherence" is really simple:
+- Inhale for 5 seconds
+- Exhale for 5 seconds
+- Repeat this for a total of 5 minutes.
 
 https://user-images.githubusercontent.com/53975649/117632692-a445d380-b17d-11eb-9afc-534c486e7fd1.mp4
-
-One session lasts 5 minutes.
 
 It is recommended to do 3 sessions a day ideally, but just do what you can.
 
