@@ -1,4 +1,4 @@
-var bgMusic = new Audio("./media/bgMusic.mp3");
+const bgMusic = new Audio("./media/bgMusic.mp3");
 
 function playBgMusic() {
     bgMusic.play();
